@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{76F49C29-20B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonTask.Application", "PersonTask.Application\PersonTask.Application.csproj", "{DB876977-A20E-4C3F-B34A-26D53F91D242}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonTask.API", "PersonTask.API\PersonTask.API.csproj", "{64771BA3-B972-44D8-BD09-19DDFD0D7A79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,8 +34,13 @@ Global
 		{DB876977-A20E-4C3F-B34A-26D53F91D242}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB876977-A20E-4C3F-B34A-26D53F91D242}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB876977-A20E-4C3F-B34A-26D53F91D242}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64771BA3-B972-44D8-BD09-19DDFD0D7A79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64771BA3-B972-44D8-BD09-19DDFD0D7A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64771BA3-B972-44D8-BD09-19DDFD0D7A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64771BA3-B972-44D8-BD09-19DDFD0D7A79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4386F62A-9B67-4EE3-A0F1-43C70F549422} = {76F49C29-20BD-4A42-AC0B-1766A2856942}
+		{64771BA3-B972-44D8-BD09-19DDFD0D7A79} = {76F49C29-20BD-4A42-AC0B-1766A2856942}
 	EndGlobalSection
 EndGlobal
