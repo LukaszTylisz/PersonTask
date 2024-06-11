@@ -1,44 +1,63 @@
-var builder = WebApplication.CreateBuilder(args);
+using PersonTask.API.Extensions;
+using PersonTask.API.Middlewares;
+using PersonTask.Application.Extensions;
+using PersonTask.Infrastructure.Extensions;
+using PersonTask.Infrastructure.Seeders;
+using Serilog;
 
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+try
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    var builder = WebApplication.CreateBuilder(args);
+
+    // Add services to the container.
+
+    builder.AddPresentation();
+    builder.Services.AddApplication();
+    builder.Services.AddInfrastructure(builder.Configuration);
+
+
+    var app = builder.Build();
+
+    var scope = app.Services.CreateScope();
+    var seeder = scope.ServiceProvider.GetRequiredService<IPersonSeeder>();
+
+ //   await seeder.Seed();
+    // Configure the HTTP request pipeline.
+    app.UseMiddleware<ErrorHandlingMiddleware>();
+    app.UseMiddleware<RequestTimeLoggingMiddleware>();
+
+    app.UseSerilogRequestLogging();
+
+    if (app.Environment.IsDevelopment())
+    {
+        app.UseSwagger();
+        app.UseSwaggerUI();
+    }
+
+
+    app.UseHttpsRedirection();
+
+    // app.MapGroup("api/identity")
+    //     .WithTags("Identity")
+    //     .MapIdentityApi<User>();
+
+    app.UseAuthorization();
+
+    app.MapControllers();
+
+    app.Run();
+}
+catch(Exception ex)
+{
+    Log.Fatal(ex, "Application startup failed");
+}
+finally
+{
+    Log.CloseAndFlush();
 }
 
-app.UseHttpsRedirection();
 
-var summaries = new[]
+namespace PersonTask.API
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-    {
-        var forecast = Enumerable.Range(1, 5).Select(index =>
-                new WeatherForecast
-                (
-                    DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                    Random.Shared.Next(-20, 55),
-                    summaries[Random.Shared.Next(summaries.Length)]
-                ))
-            .ToArray();
-        return forecast;
-    })
-    .WithName("GetWeatherForecast")
-    .WithOpenApi();
-
-app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    public partial class Program { }
 }
