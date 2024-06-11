@@ -16,7 +16,6 @@
 
     <ItemGroup>
       <Folder Include="Emails\Commands\" />
-      <Folder Include="Persons\" />
     </ItemGroup>
 
     <ItemGroup>
