@@ -1,0 +1,253 @@
+tr th {
+	color: #ff6000 !important;
+}
+
+.navbar-custom a:hover {
+	color: #ffa559;
+}
+
+.bg-orange {
+	background-color: #ff6000;
+}
+
+.text-orange {
+	color: #ff6000 !important;
+}
+
+.navbar-custom {
+	background-color: #343a40;
+}
+.navbar-custom a {
+	color: #ff6000;
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.btn-info,
+.btn-info:active,
+.btn-info:visited {
+	background-color: #0b5253 !important;
+  border: 1px solid #0b5253 !important;
+}
+
+.btn-info:hover {
+	background-color: #12a6a8 !important;
+}
+
+.btn-success,
+.btn-success:active,
+.btn-success:visited {
+	background-color: #ff6000 !important;
+	border: 1px solid #ff6000 !important;
+}
+
+.btn-success:hover {
+	background-color: #fc9759 !important;
+}
+
+.border-bottom-orange {
+	border-radius: 8px;
+	border-color: #ff6000;
+	border-bottom: 1px solid;
+}
+
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal {
+	background: #ffffff;
+	box-shadow: 2px 2px 20px 1px;
+	overflow-x: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-header,
+.modal-footer {
+	padding: 15px;
+	display: flex;
+}
+
+.modal-header {
+	position: relative;
+	border-bottom: 1px solid #eeeeee;
+	color: #4aae9b;
+	justify-content: space-between;
+}
+
+.modal-footer {
+	border-top: 1px solid #eeeeee;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.modal-body {
+	position: relative;
+	padding: 20px 10px;
+}
+
+.modal-mask {
+	position: fixed;
+	z-index: 9998;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.884);
+	display: flex;
+	transition: opacity 0.3s ease;
+}
+
+.modal-container {
+	width: 300px;
+	margin: auto;
+	padding: 20px 30px;
+	background-color: #343a40;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+	transition: all 0.3s ease;
+}
+
+.modal-header h3 {
+	margin-top: 0;
+	color: #ff6000;
+	background-color: #343a40;
+	padding: 10px 60px 10px 10px;
+	border-radius: 8px;
+	border-color: #ff6000;
+	border-bottom: 1px solid;
+}
+
+.modal-body {
+	margin: 20px 0;
+}
+
+.modal-default-button {
+	float: right;
+	color: #343a40 !important;
+}
+
+/*
+   * The following styles are auto-applied to elements with
+   * transition="modal" when their visibility is toggled
+   * by Vue.js.
+   *
+   * You can easily play with the modal transition by editing
+   * these styles.
+   */
+
+.modal-enter-from {
+	opacity: 0;
+}
+
+.modal-leave-to {
+	opacity: 0;
+}
+
+.modal-enter-from .modal-container,
+.modal-leave-to .modal-container {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.validation-error-text {
+	color: #ff0f0f;
+}
+
+.animated-word {
+	margin-top: 30px;
+	font-family: Helvetica;
+	letter-spacing: 0.4em;
+	font-weight: 400;
+	font-size: 15px;
+	text-align: center;
+	color: #ffc107;
+	cursor: pointer;
+	max-width: 400px;
+	width: 100%;
+	outline: 3px solid;
+	outline-color: #ffc107;
+	outline-offset: 20px;
+	transition: all 300ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+
+.animated-word:hover {
+	color: #ffc107;
+	outline-color: rgba(71, 126, 232, 0);
+	outline-offset: 450px;
+}
+
+.glow-on-hover {
+	width: 220px;
+	height: 50px;
+	border: none;
+	outline: none;
+	color: #111;
+	background: #111;
+	cursor: pointer;
+	position: relative;
+	z-index: 0;
+	border-radius: 10px;
+}
+
+.glow-on-hover:before {
+	content: '';
+	background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background-size: 400%;
+	z-index: -1;
+	filter: blur(5px);
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	animation: glowing 20s linear infinite;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+	border-radius: 10px;
+}
+
+.glow-on-hover:active {
+	color: #ffc107;
+}
+
+.glow-on-hover:active:after {
+	background: transparent;
+}
+
+.glow-on-hover:hover:before {
+	opacity: 1;
+}
+
+.glow-on-hover:after {
+	z-index: -1;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #ff6000;
+	left: 0;
+	top: 0;
+	border-radius: 10px;
+}
+
+@keyframes glowing {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}

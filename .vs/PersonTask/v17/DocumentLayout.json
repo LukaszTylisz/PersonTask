@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A5BA73C3-31E0-43E3-B19B-2436F6BBE94C}|Backend\\Web\\Web.csproj|c:\\users\\plluktyl.infranet\\riderprojects\\persontask\\backend\\web\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5BA73C3-31E0-43E3-B19B-2436F6BBE94C}|Backend\\Web\\Web.csproj|solutionrelative:backend\\web\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 234,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,6 +59,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonController.cs",
+              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Web\\Controllers\\PersonController.cs",
+              "RelativeDocumentMoniker": "Backend\\Web\\Controllers\\PersonController.cs",
+              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Web\\Controllers\\PersonController.cs",
+              "RelativeToolTip": "Backend\\Web\\Controllers\\PersonController.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAuwEAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T18:44:50.772Z",
+              "EditorCaption": ""
             }
           ]
         },
