@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\PersonTask.UI",
+    "\\src\\PersonTask.UI\\Infrastructure",
+    "\\src\\PersonTask.UI\\Infrastructure\\Repositories"
+  ],
+  "SelectedNode": "\\src\\PersonTask.UI\\Infrastructure\\Repositories\\GenericRepository.cs",
+  "PreviewInSolutionExplorer": false
+}
