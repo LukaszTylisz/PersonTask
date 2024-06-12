@@ -18,7 +18,6 @@ public class PersonDbContext : DbContext
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(PersonDbContext).Assembly);
         base.OnModelCreating(modelBuilder);
-        // modelbuilder.SeedData();
     }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

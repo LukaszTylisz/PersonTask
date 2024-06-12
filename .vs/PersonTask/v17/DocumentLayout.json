@@ -3,8 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Infrastructure\\Migrations\\20240612235035_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Backend\\Infrastructure\\Migrations\\20240612235035_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6850C858-CD28-4023-8AC8-C49CD96231DB}|Backend\\Infrastructure\\Infrastructure.csproj|c:\\users\\plluktyl.infranet\\riderprojects\\persontask\\backend\\infrastructure\\testdatagenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6850C858-CD28-4023-8AC8-C49CD96231DB}|Backend\\Infrastructure\\Infrastructure.csproj|solutionrelative:backend\\infrastructure\\testdatagenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Infrastructure\\Migrations\\20240612234659_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Backend\\Infrastructure\\Migrations\\20240612234659_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5BA73C3-31E0-43E3-B19B-2436F6BBE94C}|Backend\\Web\\Web.csproj|c:\\users\\plluktyl.infranet\\riderprojects\\persontask\\backend\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5BA73C3-31E0-43E3-B19B-2436F6BBE94C}|Backend\\Web\\Web.csproj|solutionrelative:backend\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6850C858-CD28-4023-8AC8-C49CD96231DB}|Backend\\Infrastructure\\Infrastructure.csproj|c:\\users\\plluktyl.infranet\\riderprojects\\persontask\\backend\\infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6850C858-CD28-4023-8AC8-C49CD96231DB}|Backend\\Infrastructure\\Infrastructure.csproj|solutionrelative:backend\\infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A5BA73C3-31E0-43E3-B19B-2436F6BBE94C}|Backend\\Web\\Web.csproj|c:\\users\\plluktyl.infranet\\riderprojects\\persontask\\backend\\web\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5BA73C3-31E0-43E3-B19B-2436F6BBE94C}|Backend\\Web\\Web.csproj|solutionrelative:backend\\web\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFFAEFF6-475D-4A98-86B4-D9E9225478F1}|Backend\\Application\\Application.csproj|c:\\users\\plluktyl.infranet\\riderprojects\\persontask\\backend\\application\\features\\person\\dto\\createpersondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFFAEFF6-475D-4A98-86B4-D9E9225478F1}|Backend\\Application\\Application.csproj|solutionrelative:backend\\application\\features\\person\\dto\\createpersondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C345B03-3281-42B4-B089-D876A4E3078E}|Backend\\Domain\\Domain.csproj|c:\\users\\plluktyl.infranet\\riderprojects\\persontask\\backend\\domain\\entitites\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C345B03-3281-42B4-B089-D876A4E3078E}|Backend\\Domain\\Domain.csproj|solutionrelative:backend\\domain\\entitites\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFFAEFF6-475D-4A98-86B4-D9E9225478F1}|Backend\\Application\\Application.csproj|c:\\users\\plluktyl.infranet\\riderprojects\\persontask\\backend\\application\\features\\person\\dto\\createemaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFFAEFF6-475D-4A98-86B4-D9E9225478F1}|Backend\\Application\\Application.csproj|solutionrelative:backend\\application\\features\\person\\dto\\createemaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFFAEFF6-475D-4A98-86B4-D9E9225478F1}|Backend\\Application\\Application.csproj|c:\\users\\plluktyl.infranet\\riderprojects\\persontask\\backend\\application\\features\\person\\dto\\emaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFFAEFF6-475D-4A98-86B4-D9E9225478F1}|Backend\\Application\\Application.csproj|solutionrelative:backend\\application\\features\\person\\dto\\emaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5BA73C3-31E0-43E3-B19B-2436F6BBE94C}|Backend\\Web\\Web.csproj|c:\\users\\plluktyl.infranet\\riderprojects\\persontask\\backend\\web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A5BA73C3-31E0-43E3-B19B-2436F6BBE94C}|Backend\\Web\\Web.csproj|solutionrelative:backend\\web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -63,12 +103,137 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "20240612235035_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Infrastructure\\Migrations\\20240612235035_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Backend\\Infrastructure\\Migrations\\20240612235035_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Infrastructure\\Migrations\\20240612235035_InitialCreate.cs",
+              "RelativeToolTip": "Backend\\Infrastructure\\Migrations\\20240612235035_InitialCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T23:50:35.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20240612234659_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Infrastructure\\Migrations\\20240612234659_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Backend\\Infrastructure\\Migrations\\20240612234659_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Infrastructure\\Migrations\\20240612234659_InitialCreate.cs",
+              "RelativeToolTip": "Backend\\Infrastructure\\Migrations\\20240612234659_InitialCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T23:47:00.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TestDataGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Infrastructure\\TestDataGenerator.cs",
+              "RelativeDocumentMoniker": "Backend\\Infrastructure\\TestDataGenerator.cs",
+              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Infrastructure\\TestDataGenerator.cs",
+              "RelativeToolTip": "Backend\\Infrastructure\\TestDataGenerator.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAA3wFMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T23:41:52.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Backend\\Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "Backend\\Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T23:20:50.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Web\\Program.cs",
+              "RelativeDocumentMoniker": "Backend\\Web\\Program.cs",
+              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Web\\Program.cs",
+              "RelativeToolTip": "Backend\\Web\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T23:11:09.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Domain\\Entitites\\Person.cs",
+              "RelativeDocumentMoniker": "Backend\\Domain\\Entitites\\Person.cs",
+              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Domain\\Entitites\\Person.cs",
+              "RelativeToolTip": "Backend\\Domain\\Entitites\\Person.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T22:50:23.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreatePersonDto.cs",
+              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Application\\Features\\Person\\Dto\\CreatePersonDto.cs",
+              "RelativeDocumentMoniker": "Backend\\Application\\Features\\Person\\Dto\\CreatePersonDto.cs",
+              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Application\\Features\\Person\\Dto\\CreatePersonDto.cs",
+              "RelativeToolTip": "Backend\\Application\\Features\\Person\\Dto\\CreatePersonDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T22:48:12.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateEmailDto.cs",
+              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Application\\Features\\Person\\Dto\\CreateEmailDto.cs",
+              "RelativeDocumentMoniker": "Backend\\Application\\Features\\Person\\Dto\\CreateEmailDto.cs",
+              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Application\\Features\\Person\\Dto\\CreateEmailDto.cs",
+              "RelativeToolTip": "Backend\\Application\\Features\\Person\\Dto\\CreateEmailDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T22:23:55.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EmailDto.cs",
+              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Application\\Features\\Person\\Dto\\EmailDto.cs",
+              "RelativeDocumentMoniker": "Backend\\Application\\Features\\Person\\Dto\\EmailDto.cs",
+              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Application\\Features\\Person\\Dto\\EmailDto.cs",
+              "RelativeToolTip": "Backend\\Application\\Features\\Person\\Dto\\EmailDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T22:23:52.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Web\\appsettings.json",
+              "RelativeDocumentMoniker": "Backend\\Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Web\\appsettings.json",
+              "RelativeToolTip": "Backend\\Web\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-12T20:12:06.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "PersonController.cs",
               "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Web\\Controllers\\PersonController.cs",
               "RelativeDocumentMoniker": "Backend\\Web\\Controllers\\PersonController.cs",
               "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\Backend\\Web\\Controllers\\PersonController.cs",
               "RelativeToolTip": "Backend\\Web\\Controllers\\PersonController.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAuwEAAAAAAAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwB4AAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T18:44:50.772Z",
               "EditorCaption": ""

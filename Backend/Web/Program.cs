@@ -41,6 +41,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    await app.InitialiseDatabaseAsync();
 }
 
 app.UseSerilogRequestLogging();
@@ -52,4 +53,3 @@ app.UseCors("all");
 app.MapControllers();
 
 app.Run();
-

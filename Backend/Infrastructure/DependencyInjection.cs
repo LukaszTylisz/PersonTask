@@ -14,8 +14,10 @@ public static class DependencyInjection
     {
         services
             .AddDbContext<PersonDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("PersonDatabaseConnection")))
-            .AddScoped<IPersonRepository, PersonRepository>();
+                options.UseSqlServer(configuration.GetConnectionString("PersonDatabaseConnection"),
+                b => b.MigrationsAssembly(typeof(PersonDbContext).Assembly.FullName)))
+            .AddScoped<IPersonRepository, PersonRepository>()
+            .AddScoped<ApplicationDbContextInitialiser>();
 
         return services;
     }
