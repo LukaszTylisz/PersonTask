@@ -1,4 +1,5 @@
 ﻿using Application.Contracts.Persistence;
+using Application.Exceptions;
 using AutoMapper;
 using Domain.Entitites;
 using MediatR;
@@ -9,6 +10,12 @@ public class AddPersonCommandHandler(IPersonRepository repository, IMapper mappe
 {
     public async Task<int> Handle(AddPersonCommand request, CancellationToken cancellationToken)
     {
+        var validator = new AddPersonCommandValidator(repository);
+        var validatorResult = await validator.ValidateAsync(request.Person);
+
+        if (validatorResult.Errors.Any())
+            throw new BadRequestException("Invalid Person", validatorResult);
+        
         var person = mapper.Map<Domain.Entitites.Person>(request.Person);
 
         foreach (var emailDto in request.Person.Emails)

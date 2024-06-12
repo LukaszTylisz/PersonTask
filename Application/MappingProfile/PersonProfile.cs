@@ -21,7 +21,6 @@ public class MappingProfile : Profile
          .ForMember(dest => dest.Emails, opt => opt.MapFrom(src => src.Emails.Select(e => new EmailDto { Id = e.Id, EmailAddress = e.EmailAddress })))
          .AfterMap((src, dest) =>
          {
-             // Usuwamy istniejące adresy e-mail, które nie są obecne w DTO
              dest.Emails.RemoveAll(e => !src.Emails.Any(eDto => eDto.Id == e.Id));
          });
 

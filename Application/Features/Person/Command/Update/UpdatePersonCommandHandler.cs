@@ -11,6 +11,12 @@ public class UpdatePersonCommandHandler(IPersonRepository repository, IMapper ma
 {
     public async Task<Unit> Handle(UpdatePersonCommand request, CancellationToken cancellationToken)
     {
+        var validator = new UpdateCommandValidator();
+        var validatorResult = await validator.ValidateAsync(request.Person);
+
+        if (validatorResult.Errors.Any())
+            throw new BadRequestException("Invalid Person", validatorResult);
+        
         var person = await repository.GetById(request.Person.Id);
 
         if (person == null)
