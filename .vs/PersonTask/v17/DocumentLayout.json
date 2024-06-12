@@ -3,32 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DFFAEFF6-475D-4A98-86B4-D9E9225478F1}|Application\\Application.csproj|c:\\users\\plluktyl.infranet\\riderprojects\\persontask\\src\\persontask.ui\\application\\features\\person\\dto\\emaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DFFAEFF6-475D-4A98-86B4-D9E9225478F1}|Application\\Application.csproj|solutionrelative:application\\features\\person\\dto\\emaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6850C858-CD28-4023-8AC8-C49CD96231DB}|Infrastructure\\Infrastructure.csproj|c:\\users\\plluktyl.infranet\\riderprojects\\persontask\\src\\persontask.ui\\infrastructure\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6850C858-CD28-4023-8AC8-C49CD96231DB}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFFAEFF6-475D-4A98-86B4-D9E9225478F1}|Application\\Application.csproj|c:\\users\\plluktyl.infranet\\riderprojects\\persontask\\src\\persontask.ui\\application\\features\\person\\dto\\persondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DFFAEFF6-475D-4A98-86B4-D9E9225478F1}|Application\\Application.csproj|solutionrelative:application\\features\\person\\dto\\persondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DFFAEFF6-475D-4A98-86B4-D9E9225478F1}|Application\\Application.csproj|c:\\users\\plluktyl.infranet\\riderprojects\\persontask\\src\\persontask.ui\\application\\contracts\\persistence\\ipersonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFFAEFF6-475D-4A98-86B4-D9E9225478F1}|Application\\Application.csproj|solutionrelative:application\\contracts\\persistence\\ipersonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C345B03-3281-42B4-B089-D876A4E3078E}|Domain\\Domain.csproj|c:\\users\\plluktyl.infranet\\riderprojects\\persontask\\src\\persontask.ui\\domain\\entitites\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C345B03-3281-42B4-B089-D876A4E3078E}|Domain\\Domain.csproj|solutionrelative:domain\\entitites\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DFFAEFF6-475D-4A98-86B4-D9E9225478F1}|Application\\Application.csproj|c:\\users\\plluktyl.infranet\\riderprojects\\persontask\\src\\persontask.ui\\application\\features\\person\\command\\update\\updatepersoncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFFAEFF6-475D-4A98-86B4-D9E9225478F1}|Application\\Application.csproj|solutionrelative:application\\features\\person\\command\\update\\updatepersoncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5BA73C3-31E0-43E3-B19B-2436F6BBE94C}|Web\\Web.csproj|c:\\users\\plluktyl.infranet\\riderprojects\\persontask\\src\\persontask.ui\\web\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5BA73C3-31E0-43E3-B19B-2436F6BBE94C}|Web\\Web.csproj|solutionrelative:web\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DFFAEFF6-475D-4A98-86B4-D9E9225478F1}|Application\\Application.csproj|c:\\users\\plluktyl.infranet\\riderprojects\\persontask\\src\\persontask.ui\\application\\features\\person\\command\\update\\updatepersoncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFFAEFF6-475D-4A98-86B4-D9E9225478F1}|Application\\Application.csproj|solutionrelative:application\\features\\person\\command\\update\\updatepersoncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5BA73C3-31E0-43E3-B19B-2436F6BBE94C}|Web\\Web.csproj|c:\\users\\plluktyl.infranet\\riderprojects\\persontask\\src\\persontask.ui\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5BA73C3-31E0-43E3-B19B-2436F6BBE94C}|Web\\Web.csproj|solutionrelative:web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DFFAEFF6-475D-4A98-86B4-D9E9225478F1}|Application\\Application.csproj|c:\\users\\plluktyl.infranet\\riderprojects\\persontask\\src\\persontask.ui\\application\\mappingprofile\\personprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFFAEFF6-475D-4A98-86B4-D9E9225478F1}|Application\\Application.csproj|solutionrelative:application\\mappingprofile\\personprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFFAEFF6-475D-4A98-86B4-D9E9225478F1}|Application\\Application.csproj|c:\\users\\plluktyl.infranet\\riderprojects\\persontask\\src\\persontask.ui\\application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DFFAEFF6-475D-4A98-86B4-D9E9225478F1}|Application\\Application.csproj|solutionrelative:application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5BA73C3-31E0-43E3-B19B-2436F6BBE94C}|Web\\Web.csproj|c:\\users\\plluktyl.infranet\\riderprojects\\persontask\\src\\persontask.ui\\web\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5BA73C3-31E0-43E3-B19B-2436F6BBE94C}|Web\\Web.csproj|solutionrelative:web\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DFFAEFF6-475D-4A98-86B4-D9E9225478F1}|Application\\Application.csproj|c:\\users\\plluktyl.infranet\\riderprojects\\persontask\\src\\persontask.ui\\application\\features\\person\\dto\\createpersondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFFAEFF6-475D-4A98-86B4-D9E9225478F1}|Application\\Application.csproj|solutionrelative:application\\features\\person\\dto\\createpersondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,34 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 234,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 12,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PersonDto.cs",
-              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Application\\Features\\Person\\Dto\\PersonDto.cs",
-              "RelativeDocumentMoniker": "Application\\Features\\Person\\Dto\\PersonDto.cs",
-              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Application\\Features\\Person\\Dto\\PersonDto.cs",
-              "RelativeToolTip": "Application\\Features\\Person\\Dto\\PersonDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T09:24:46.257Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EmailDto.cs",
-              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Application\\Features\\Person\\Dto\\EmailDto.cs",
-              "RelativeDocumentMoniker": "Application\\Features\\Person\\Dto\\EmailDto.cs",
-              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Application\\Features\\Person\\Dto\\EmailDto.cs",
-              "RelativeToolTip": "Application\\Features\\Person\\Dto\\EmailDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T09:24:34.72Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -112,67 +82,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Email.cs",
-              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Domain\\Entitites\\Email.cs",
-              "RelativeDocumentMoniker": "Domain\\Entitites\\Email.cs",
-              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Domain\\Entitites\\Email.cs",
-              "RelativeToolTip": "Domain\\Entitites\\Email.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "DocumentIndex": 1,
+              "Title": "IPersonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Application\\Contracts\\Persistence\\IPersonRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Contracts\\Persistence\\IPersonRepository.cs",
+              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Application\\Contracts\\Persistence\\IPersonRepository.cs",
+              "RelativeToolTip": "Application\\Contracts\\Persistence\\IPersonRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T09:20:08.473Z",
+              "WhenOpened": "2024-06-12T12:46:40.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Infrastructure\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Infrastructure\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\GenericRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T12:46:10.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UpdatePersonCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Application\\Features\\Person\\Command\\Update\\UpdatePersonCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\Person\\Command\\Update\\UpdatePersonCommandHandler.cs",
+              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Application\\Features\\Person\\Command\\Update\\UpdatePersonCommandHandler.cs",
+              "RelativeToolTip": "Application\\Features\\Person\\Command\\Update\\UpdatePersonCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T12:45:52.186Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PersonController.cs",
-              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Web\\Controllers\\PersonController.cs",
-              "RelativeDocumentMoniker": "Web\\Controllers\\PersonController.cs",
-              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Web\\Controllers\\PersonController.cs",
-              "RelativeToolTip": "Web\\Controllers\\PersonController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAUAAAA",
+              "Title": "UpdatePersonCommand.cs",
+              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Application\\Features\\Person\\Command\\Update\\UpdatePersonCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\Person\\Command\\Update\\UpdatePersonCommand.cs",
+              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Application\\Features\\Person\\Command\\Update\\UpdatePersonCommand.cs",
+              "RelativeToolTip": "Application\\Features\\Person\\Command\\Update\\UpdatePersonCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T09:04:15.31Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Web\\Program.cs",
-              "RelativeDocumentMoniker": "Web\\Program.cs",
-              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Web\\Program.cs",
-              "RelativeToolTip": "Web\\Program.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T09:03:45.444Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ExceptionMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Web\\Middleware\\ExceptionMiddleware.cs",
-              "RelativeDocumentMoniker": "Web\\Middleware\\ExceptionMiddleware.cs",
-              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Web\\Middleware\\ExceptionMiddleware.cs",
-              "RelativeToolTip": "Web\\Middleware\\ExceptionMiddleware.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAwwC4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T09:02:03.726Z",
+              "WhenOpened": "2024-06-12T12:45:21.46Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Application\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "Application\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Application\\DependencyInjection.cs",
-              "RelativeToolTip": "Application\\DependencyInjection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAMAAAA",
+              "Title": "CreatePersonDto.cs",
+              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Application\\Features\\Person\\Dto\\CreatePersonDto.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\Person\\Dto\\CreatePersonDto.cs",
+              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Application\\Features\\Person\\Dto\\CreatePersonDto.cs",
+              "RelativeToolTip": "Application\\Features\\Person\\Dto\\CreatePersonDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T09:00:03.824Z",
+              "WhenOpened": "2024-06-12T12:31:50.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PersonProfile.cs",
+              "DocumentMoniker": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Application\\MappingProfile\\PersonProfile.cs",
+              "RelativeDocumentMoniker": "Application\\MappingProfile\\PersonProfile.cs",
+              "ToolTip": "C:\\Users\\plluktyl.INFRANET\\RiderProjects\\PersonTask\\src\\PersonTask.UI\\Application\\MappingProfile\\PersonProfile.cs",
+              "RelativeToolTip": "Application\\MappingProfile\\PersonProfile.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T11:28:07.061Z",
               "EditorCaption": ""
             }
           ]

@@ -13,9 +13,12 @@ public class AddPersonCommandHandler(IPersonRepository repository, IMapper mappe
 
         foreach (var emailDto in request.Person.Emails)
         {
-            var email = mapper.Map<Email>(emailDto);
-            email.Person = person;
-            person.Emails.Add(email);
+            if (!person.Emails.Any(e => e.EmailAddress == emailDto.Email))
+            {
+                var email = mapper.Map<Email>(emailDto);
+                email.Person = person;
+                person.Emails.Add(email);
+            }
         }
 
         await repository.Create(person);

@@ -5,5 +5,5 @@ namespace Application.Features.Person.Command.Create;
 
 public class AddPersonCommand : IRequest<int>
 {
-    public PersonDto Person { get; set; } = default!;
+    public CreatePersonDto Person { get; set; } = default!;
 }

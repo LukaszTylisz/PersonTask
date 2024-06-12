@@ -42,24 +42,20 @@ public class PersonController : ControllerBase
     [ProducesResponseType(200)]
     [ProducesResponseType(400)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<ActionResult<int>> Create(PersonDto personDto)
+    public async Task<ActionResult<int>> Create(CreatePersonDto personDto)
     {
         var command = new AddPersonCommand { Person = personDto };
         var personId = await _mediator.Send(command);
         return Ok(personId);
     }
 
-    [HttpPut("{id}")]
+    [HttpPut]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(400)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesDefaultResponseType]
-    public async Task<ActionResult> Update(int id, PersonDto personDto)
+    public async Task<ActionResult> Update(PersonDto personDto)
     {
-        if (id != personDto.Id)
-        {
-            return BadRequest("Invalid ID");
-        }
 
         var command = new UpdatePersonCommand { Person = personDto };
         await _mediator.Send(command);

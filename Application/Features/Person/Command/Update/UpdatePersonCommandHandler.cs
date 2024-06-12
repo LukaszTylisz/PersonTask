@@ -19,9 +19,9 @@ public class UpdatePersonCommandHandler(IPersonRepository repository, IMapper ma
         }
 
         mapper.Map(request.Person, person);
-        
+
         person.Emails.Clear();
-        
+
         foreach (var emailDto in request.Person.Emails)
         {
             var email = mapper.Map<Email>(emailDto);

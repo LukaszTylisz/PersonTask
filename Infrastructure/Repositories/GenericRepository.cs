@@ -1,6 +1,5 @@
 ﻿using Application.Contracts.Persistence;
 using Domain.Common;
-using Domain.Entitites;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,6 +18,7 @@ public class GenericRepository<T>(PersonDbContext context) : IGenericRepository<
     {
         if (entity == null) throw new ArgumentNullException(nameof(entity));
         context.Set<T>().Update(entity);
+        await context.SaveChangesAsync();
     }
 
     public async Task Delete(T entity)
@@ -41,6 +41,4 @@ public class GenericRepository<T>(PersonDbContext context) : IGenericRepository<
             .Set<T>()
             .FindAsync(id);
     }
-
-   
 }
