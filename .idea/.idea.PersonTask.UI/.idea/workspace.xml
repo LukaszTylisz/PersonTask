@@ -12,40 +12,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a19c572-ca62-4d8c-8ab8-71de466b4277" name="Changes" comment="Configurated Persistance">
-      <change afterPath="$PROJECT_DIR$/.vs/PersonTask/FileContentIndex/bff121ad-7b34-47db-a0e8-77090d348574.vsidx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vs/PersonTask/config/applicationhost.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonTask.API/Controllers/EmailsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonTask.API/Controllers/PersonsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonTask.API/Extensions/WebApplicationBuilderExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonTask.API/Middlewares/ErrorHandlingMiddleware.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonTask.API/Middlewares/RequestTimeLoggingMiddleware.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonTask.Application/Users/CurrentUser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonTask.Application/Users/UserContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonTask.Domain/Entities/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonTask.Domain/Interfaces/IPersonAuthorizationService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonTask.Infrastructure/Authorization/Services/PersonAuthorizationService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonTask.Infrastructure/Migrations/20240611121618_Init.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonTask.Infrastructure/Migrations/20240611121618_Init.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonTask.Infrastructure/Migrations/20240611123914_SecondAttempt.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonTask.Infrastructure/Migrations/20240611123914_SecondAttempt.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonTask.Infrastructure/Migrations/PersonsDbContextModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonTask.Infrastructure/Seeders/IPersonSeeder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PersonTask.Infrastructure/Seeders/PersonSeeder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PersonTask.UI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PersonTask.UI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/PersonTask/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/PersonTask/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/PersonTask/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/PersonTask/v17/.futdcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/PersonTask/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/PersonTask/v17/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/PersonTask/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/PersonTask/v17/DocumentLayout.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/persontask.metadata.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/persontask.metadata.v7.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/persontask.projects.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/persontask.projects.v7.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonTask.API/PersonTask.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PersonTask.API/PersonTask.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonTask.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonTask.API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonTask.Domain/PersonTask.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PersonTask.Domain/PersonTask.Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonTask.Infrastructure/Extensions/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonTask.Infrastructure/Extensions/ServiceCollectionExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonTask.Infrastructure/Persistence/PersonsDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonTask.Infrastructure/Persistence/PersonsDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonTask.Infrastructure/PersonTask.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PersonTask.Infrastructure/PersonTask.Infrastructure.csproj" afterDir="false" />
-    </list>
+    <list default="true" id="9a19c572-ca62-4d8c-8ab8-71de466b4277" name="Changes" comment="Added Authorization" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -200,7 +167,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718095674737</updated>
-      <workItem from="1718095675856" duration="15115000" />
+      <workItem from="1718095675856" duration="15499000" />
     </task>
     <task id="LOCAL-00001" summary="Created Core and added Command &amp; Queries for Emails">
       <option name="closed" value="true" />
@@ -226,7 +193,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718106362377</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="adding user and Claims">
+      <option name="closed" value="true" />
+      <created>1718111159242</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718111159242</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added Authorization">
+      <option name="closed" value="true" />
+      <created>1718111323900</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718111323900</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +223,8 @@
     <MESSAGE value="Created Core and added Command &amp; Queries for Emails" />
     <MESSAGE value="Added Person Commands &amp; Queries" />
     <MESSAGE value="Configurated Persistance" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configurated Persistance" />
+    <MESSAGE value="adding user and Claims" />
+    <MESSAGE value="Added Authorization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Authorization" />
   </component>
 </project>
