@@ -7,7 +7,7 @@
 				</div>
 
 				<div class="modal-body text-white">
-					<form>
+					<form @submit.prevent="savePerson">
 						<div class="form-group">
 							<label for="firstName">FirstName: </label>
 							<input type="text" class="form-control m-1" id="firstName" v-model="Person.firstName" />
@@ -27,24 +27,26 @@
 							</small>
 						</div>
 						<div class="form-group">
-							<div class="form-group">
-								<label for="description">Description:</label>
-								<input type="text" class="form-control m-1" id="description" v-model="Person.description" />
-								<small class="mx-3 mb-4 d-block">
-									<span v-for="error of v$.Person.description.$errors" :key="error.$uid" class="validation-error-text">
-										<strong>{{ error.$message }}</strong>
-									</span>
-								</small>
+							<label for="description">Description:</label>
+							<input type="text" class="form-control m-1" id="description" v-model="Person.description" />
+							<small class="mx-3 mb-4 d-block">
+								<span v-for="error of v$.Person.description.$errors" :key="error.$uid" class="validation-error-text">
+									<strong>{{ error.$message }}</strong>
+								</span>
+							</small>
+						</div>
+						<div class="form-group">
+							<label for="emails">Emails:</label>
+							<div v-for="(email, index) in Person.emails" :key="index" class="d-flex">
+								<input type="text" class="form-control m-1" v-model="email.email" />
+								<button type="button" class="btn btn-danger m-1" @click="removeEmail(index)">Remove</button>
 							</div>
-							<div class="form-group">
-								<label for="emails">Emails:</label>
-								<input type="text" class="form-control m-1" id="emails" v-model="Person.emails" />
-								<small class="mx-3 mb-4 d-block">
-									<span v-for="error of v$.Person.emails.$errors" :key="error.$uid" class="validation-error-text">
-										<strong>{{ error.$message }}</strong>
-									</span>
-								</small>
-							</div>
+							<button type="button" class="btn btn-secondary m-1" @click="addEmail">Add Email</button>
+							<small class="mx-3 mb-4 d-block">
+								<span v-for="error of v$.Person.emails.$errors" :key="error.$uid" class="validation-error-text">
+									<strong>{{ error.$message }}</strong>
+								</span>
+							</small>
 						</div>
 					</form>
 				</div>
@@ -54,11 +56,11 @@
 							<button
 								v-if="edit"
 								class="btn btn-success modal-default-button px-4 text-white"
-								@click="updatePerson"
+								@click="savePerson"
 							>
 								Save
 							</button>
-							<button v-else class="btn btn-success modal-default-button px-4 text-white" @click="addPerson">
+							<button v-else class="btn btn-success modal-default-button px-4 text-white" @click="savePerson">
 								Add
 							</button>
 							<button class="btn btn-info modal-default-button px-4 text-white" @click="$emit('close'), clearForm()">
@@ -93,8 +95,9 @@ export default {
 				firstName: '',
 				lastName: '',
 				description: '',
-				emails: '',
+				emails: []
 			},
+			newEmail: ''
 		}
 	},
 	validations() {
@@ -102,27 +105,38 @@ export default {
 			Person: {
 				firstName: {
 					required: helpers.withMessage('This field can not be empty', required),
-					maxLength: helpers.withMessage('Up 50 chars', maxLength(50)),
+					maxLength: helpers.withMessage('Up to 50 chars', maxLength(50)),
 				},
 				lastName: {
 					required: helpers.withMessage('This field can not be empty', required),
-					maxLength: helpers.withMessage('Up 50 chars', maxLength(50)),
+					maxLength: helpers.withMessage('Up to 50 chars', maxLength(50)),
 				},
-				description: {
-				},
+				description: {},
 				emails: {
 					required: helpers.withMessage('This field can not be empty', required),
+					$each: {
+						email: {
+							required: helpers.withMessage('This field can not be empty', required)
+						}
+					}
 				},
 			},
 		}
 	},
 	methods: {
-		async addPerson() {
+		async savePerson() {
 			const isFormCorrect = await this.v$.$validate()
 			if (!isFormCorrect) {
 				return
 			}
-
+			
+			if (this.edit) {
+				this.updatePerson()
+			} else {
+				this.addPerson()
+			}
+		},
+		async addPerson() {
 			PersonDataService.createPerson(this.Person).then(() => {
 				this.clearForm()
 				this.$emit('close')
@@ -131,11 +145,6 @@ export default {
 			})
 		},
 		async updatePerson() {
-			const isFormCorrect = await this.v$.$validate()
-			if (!isFormCorrect) {
-				return
-			}
-
 			PersonDataService.updatePerson(this.Person).then(() => {
 				this.clearForm()
 				this.$emit('close')
@@ -149,19 +158,25 @@ export default {
 				firstName: '',
 				lastName: '',
 				description: '',
-				emails: '',
+				emails: []
 			}
+		},
+		addEmail() {
+			this.Person.emails.push({ email: '' })
+		},
+		removeEmail(index) {
+			this.Person.emails.splice(index, 1)
 		},
 	},
 	watch: {
 		selected(newVal) {
 			if (newVal) {
 				this.Person = {
-					id: this.selected.id,
-					firstName: this.selected.firstName,
-					lastName: this.selected.lastName,
-					description: this.selected.description,
-					emails: this.selected.emails,
+					id: newVal.id,
+					firstName: newVal.firstName,
+					lastName: newVal.lastName,
+					description: newVal.description,
+					emails: newVal.emails || []
 				}
 			}
 		},
@@ -169,4 +184,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.validation-error-text {
+	color: red;
+}
+</style>

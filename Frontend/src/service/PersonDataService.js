@@ -16,12 +16,12 @@ class PersonDataService {
         return axios.delete(`${PERSON_API_URL}/${id}`);
     }
     
-    updatePerson(personDto) {
-        return axios.put(`${PERSON_API_URL}/`, personDto);
+    updatePerson(person) {
+        return axios.put(`${PERSON_API_URL}/`, person);
     }
 
-    createPerson(personDto) {
-        return axios.post(`${PERSON_API_URL}/`, personDto);
+    createPerson(person) {
+        return axios.post(`${PERSON_API_URL}/`, person);
     }
   }
 export default new PersonDataService()
