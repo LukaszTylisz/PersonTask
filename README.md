@@ -37,7 +37,8 @@ Before you begin, ensure you have the following software installed on your syste
 
 ### Frontend
 
-![image](https://github.com/LukaszTylisz/PersonTask/assets/86656091/7e92b53b-0256-4a41-bef7-5eaf12fec6f3)
+![image](https://github.com/LukaszTylisz/PersonTask/assets/86656091/9bd17c6c-81cf-4842-a38a-07e4bc0ba75b)
+
 
 
 ### Architecture overview
