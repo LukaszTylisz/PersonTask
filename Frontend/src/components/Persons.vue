@@ -31,8 +31,15 @@
 						<td>{{ Person.firstName }}</td>
 						<td>{{ Person.lastName }}</td>
 						<td>{{ Person.description }}</td>
-						<td>{{ Person.emails }}</td>
-
+						<td>
+                            <ul>
+                                <li v-for="(email, index) in Person.emails" :key="index">
+                                    {{ email.emailAddress }}
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+					</td>
 						<td>
 							<div class="btn-group" role="group" aria-label="Basic example">
 								<button class="btn btn-info mx-1 text-white" v-on:click="editPerson(Person)">Edit</button>
