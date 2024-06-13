@@ -17,7 +17,7 @@ public static class DependencyInjection
                 options.UseSqlServer(configuration.GetConnectionString("PersonDatabaseConnection"),
                 b => b.MigrationsAssembly(typeof(PersonDbContext).Assembly.FullName)))
             .AddScoped<IPersonRepository, PersonRepository>()
-            .AddScoped<ApplicationDbContextInitialiser>();
+            .AddScoped<GenerateFakeData>();
 
         return services;
     }

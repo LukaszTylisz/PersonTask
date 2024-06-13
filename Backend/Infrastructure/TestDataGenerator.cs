@@ -9,40 +9,39 @@ namespace Infrastructure;
 
 public static class TestDataGenerator
 {
-    public static async Task InitialiseDatabaseAsync(this WebApplication app)
+    public static async Task InitialiseAndSeedData(this WebApplication app)
     {
         using var scope = app.Services.CreateScope();
-
-        var initialiser = scope.ServiceProvider.GetRequiredService<ApplicationDbContextInitialiser>();
-
-        await initialiser.InitialiseAsync();
-
-        await initialiser.SeedAsync();
+        var initialiser = scope.ServiceProvider.GetRequiredService<GenerateFakeData>();
+        await initialiser.InitialiseAndSeedAsync();
     }
 }
 
-internal class ApplicationDbContextInitialiser
+internal class GenerateFakeData
 {
     private readonly PersonDbContext _context;
-    private readonly ILogger<ApplicationDbContextInitialiser> _logger;
+    private readonly ILogger<GenerateFakeData> _logger;
 
-    public ApplicationDbContextInitialiser(PersonDbContext context, ILogger<ApplicationDbContextInitialiser> logger)
+    public GenerateFakeData(PersonDbContext context, ILogger<GenerateFakeData> logger)
     {
         _context = context;
         _logger = logger;
     }
 
-    public async Task InitialiseAsync()
+    public async Task InitialiseAndSeedAsync()
     {
         try
         {
-            _logger.LogInformation("Migrating database...");
+            _logger.LogInformation("Migrating and seeding database...");
+
             await _context.Database.MigrateAsync();
-            _logger.LogInformation("Database migrated.");
+            await TrySeedAsync();
+
+            _logger.LogInformation("Database migrated and seeded.");
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "An error occurred while migrating the database.");
+            _logger.LogError(ex, "An error occurred while migrating and seeding the database.");
             throw;
         }
     }
@@ -64,7 +63,7 @@ internal class ApplicationDbContextInitialiser
     {
         if (!_context.Persons.Any())
         {
-            _logger.LogInformation("No persons found in the database. Seeding data...");
+            _logger.LogInformation("Seeding persons data...");
 
             var personsGenerator = new Faker<Domain.Entitites.Person>()
                 .RuleFor(p => p.FirstName, f => f.Person.FirstName)
@@ -72,26 +71,17 @@ internal class ApplicationDbContextInitialiser
                 .RuleFor(p => p.Description, f => f.Lorem.Sentence())
                 .RuleFor(p => p.Emails, f => new List<Domain.Entitites.Email>
                 {
-                new Domain.Entitites.Email
-                {
-                    EmailAddress = f.Internet.Email()
-                }
-                });
+                    new Domain.Entitites.Email
+                    {
+                        EmailAddress = f.Internet.Email()
+                    }
+                })
+                .Generate(100);
 
-            var persons = personsGenerator.Generate(100);
+            await _context.AddRangeAsync(personsGenerator);
+            await _context.SaveChangesAsync();
 
-            _logger.LogInformation("Generated {Count} persons.", persons.Count);
-
-            try
-            {
-                await _context.AddRangeAsync(persons);
-                await _context.SaveChangesAsync();
-                _logger.LogInformation("Data seeded successfully.");
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "An error occurred while seeding data.");
-            }
+            _logger.LogInformation("Data seeded successfully.");
         }
         else
         {

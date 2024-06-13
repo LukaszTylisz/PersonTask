@@ -41,7 +41,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    await app.InitialiseDatabaseAsync();
+    await app.InitialiseAndSeedData();
 }
 
 app.UseSerilogRequestLogging();
