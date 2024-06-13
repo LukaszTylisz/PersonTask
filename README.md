@@ -1,6 +1,6 @@
 ## PersonTask
 
-This is repository for a web application built with `ASP.NET Core 8 Web API`.  includes instructions for setting up the development environment, running the application and managing database migrations with Entity Framework Core. It's a personal application where data are added using Bogus and user can manage data using CRUD actions.
+This is repository for a web application built with `ASP.NET Core 8 Web API`.  includes instructions for setting up the development environment, running the application and managing database migrations with Entity Framework Core. It's a personal application where data are added by using Bogus and user can manage data using CRUD actions.
 
 ## Requirements
 
