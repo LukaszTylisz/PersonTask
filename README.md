@@ -70,6 +70,7 @@ This results in a design that is:
 - CQRS with MediatR
 - Fluent Validation
 - Automapper
+- Bogus
 - Feature‑based folder organization
 - Entity Framework Core
 - Repository Pattern
